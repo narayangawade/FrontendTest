@@ -23,7 +23,7 @@ const Add = () => {
 
   const submitForm = async(e) =>{
     e.preventDefault();
-    await axios.post("http://localhost:8000/api/create", user)
+    await axios.post("https://mernback-3-kgbg.onrender.com/api/create", user)
     .then((response)=>{
        toast.success(response.data.msg, {position:"top-right"})
        navigate("/")
